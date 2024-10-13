@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohita Jahnavi Jala - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rohita Jahnavi Jala</h1>
+        <p>Email: roohitajala10@gmail.com | Phone: +1 616-232-5765</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about" onclick="showSection('about')">About</a></li>
+            <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="#experience" onclick="showSection('experience')">Experience</a></li>
+            <li><a href="#education" onclick="showSection('education')">Education</a></li>
+            <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+            <li><a href="#interests" onclick="showSection('interests')">Interests</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>I am a Senior Data Engineer with experience as a GIS Engineer. I have worked on developing data solutions and analyzing geospatial information to support decision-making. I enjoy solving problems and using data to help organizations improve their operations.</p>
+        </section>
+
+        <section id="projects" class="content-section" style="display: none;">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>CIS:641 - SYSTEMS ANALYSIS AND DESIGN</h3>
+                <h4>CarChoice: Discover Your Ideal Four-Wheeler</h4>
+                <p><strong>Objective:</strong> To create an innovative e-commerce platform for discovering ideal four-wheelers.</p>
+                <p><strong>Target Audience:</strong> Car buyers seeking comprehensive information on both new and used vehicles.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Detailed specifications, pros and cons, and user reviews for various car models.</li>
+                    <li>User-friendly interface for easy comparison of different vehicles.</li>
+                    <li>Focus on both used and certified pre-owned options, promoting sustainability.</li>
+                </ul>
+                <p><strong>Unique Selling Proposition:</strong> Emphasizes sustainable choices in a market dominated by new car sales.</p>
+                <p><strong>Technical Stack:</strong> Developed using Angular, NodeJS, MongoDB, and ExpressJS.</p>
+                <p><strong>Goal:</strong> To enhance the online shopping experience and empower users to make informed purchasing decisions.</p>
+            </div>
+            <div class="project">
+                <h3>STA:518 - STATISTICAL COMPUTING AND GRAPHICS WITH R</h3>
+                <h4>Analysis of Presidential Elections Data: County-Level in USA</h4>
+                <p>The project involved a comprehensive analysis of U.S. presidential elections data at the county level, using the statistical programming language R.</p>
+                <p>Data collection and preprocessing were crucial components, involving the integration of diverse datasets, including election results and demographic information.</p>
+                <p>Exploratory data analysis was conducted, uncovering trends, correlations, and distributions, with visualizations like scatter plots, bar charts, and interactive maps.</p>
+            </div>
+        </section>
+
+        <section id="experience" class="content-section" style="display: none;">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Senior Data Engineer</h3>
+                <h4>Accenture (September 2019 - June 2023)</h4>
+                <ul>
+                    <li>Developed and maintained data pipelines and ETL processes.</li>
+                    <li>Supported clients in evaluating and prioritizing work through data analysis and reporting.</li>
+                    <li>Led a team of data analysts, providing mentorship and guidance.</li>
+                    <li>Integrated with external systems using SQL to optimize data management.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>GIS Engineer</h3>
+                <h4>RMSI (August 2018 - August 2019)</h4>
+                <ul>
+                    <li>Utilized GIS technology to analyze and visualize spatial data.</li>
+                    <li>Created detailed maps and reports to support planning and decision-making processes.</li>
+                    <li>Collaborated with stakeholders to gather requirements and deliver GIS solutions tailored to client needs.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Network Engineer</h3>
+                <h4>Airtel (August 2017 - July 2018)</h4>
+                <ul>
+                    <li>Managed and maintained network infrastructure to ensure optimal performance.</li>
+                    <li>Conducted troubleshooting and resolved connectivity issues for customers.</li>
+                    <li>Collaborated with cross-functional teams to enhance network operations.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education" class="content-section" style="display: none;">
+            <h2>Education</h2>
+            <div class="education">
+                <h3>Grand Valley State University</h3>
+                <p>Masters in Applied Computer Science (August 2023 - April 2025)</p>
+                <p>GPA: 4.0</p>
+            </div>
+            <div class="education">
+                <h3>Godavari Institute of Engineering and Technology</h3>
+                <p>Electronics and Communication Engineering (September 2013 - May 2017)</p>
+                <p>GPA: 3.8</p>
+            </div>
+        </section>
+
+        <section id="skills" class="content-section" style="display: none;">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Proficient in programming languages including Python and JavaScript (Node.js).</li>
+                <li>Experienced in web development using Angular, Express.js, HTML, and CSS.</li>
+                <li>Skilled in database technologies such as MongoDB and SQL for efficient data management.</li>
+                <li>Knowledgeable in data engineering tools, focusing on ETL processes and data pipeline development.</li>
+                <li>Experienced in Geographic Information Systems (GIS) for analysis, mapping, and spatial data visualization.</li>
+                <li>Familiar with version control systems, particularly Git.</li>
+                <li>Strong leadership abilities with experience in team mentorship and effective communication.</li>
+            </ul>
+        </section>
+
+        <section id="interests" class="content-section" style="display: none;">
+            <h2>Interests</h2>
+            <p><strong>Traveling:</strong> I cherish the opportunity to explore new places and immerse myself in diverse cultures.</p>
+            <p><strong>Community Engagement:</strong> I place great value on spending quality time with both children and the elderly.</p>
+            <p><strong>Nature Enthusiast:</strong> I find immense joy in nature-related activities, particularly the tranquility offered by beach views.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rohita Jahnavi Jala</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
+
+        // Show the About section by default
+        showSection('about');
+    </script>
+</body>
+</html>
