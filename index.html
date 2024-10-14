@@ -56,6 +56,19 @@
         ul li {
             margin-bottom: 10px;
         }
+
+        .heading-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .heading-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -72,6 +85,7 @@
             <li><a href="#education" onclick="showSection('education')">Education</a></li>
             <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
             <li><a href="#interests" onclick="showSection('interests')">Interests</a></li>
+            <li><a href="#team-repositories" onclick="showSection('team-repositories')">Team Repositories</a></li>
         </ul>
     </nav>
 
@@ -172,10 +186,26 @@
             <p><strong>Community Engagement:</strong> I place great value on spending quality time with both children and the elderly.</p>
             <p><strong>Nature Enthusiast:</strong> I find immense joy in nature-related activities, particularly the tranquility offered by beach views.</p>
         </section>
+
+        <!-- Team Repositories Section -->
+        <section id="team-repositories" class="content-section" style="display: none;">
+            <h2>Team Project Repositories 
+                <button class="heading-button" onclick="toggleContent('more-team-repositories')">Visit GitHub</button>
+            </h2>
+            <p>
+                <a href="https://rohitajala.github.io/GVSU-CIS641-NinjaTurtles/" target="_blank">
+                    Project Webpage Link: GVSU CIS641 NinjaTurtles
+                </a>
+            </p>
+            <div id="more-team-repositories" class="more-content" style="display: none;">
+                <p>This repository contains the collaborative work my team and I are contributing toward our semester-long project for CIS641. The project revolves around building efficient cloud-based systems for real-world scenarios.</p>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2024 Rohita Jahnavi Jala</p>
+        <p>&copy; 2024 Rohita Jahnavi Jala - All Rights Reserved</p>
     </footer>
 
     <script>
@@ -189,6 +219,15 @@
             // Show the selected section
             const selectedSection = document.getElementById(sectionId);
             selectedSection.style.display = 'block';
+        }
+
+        function toggleContent(contentId) {
+            const content = document.getElementById(contentId);
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
         }
     </script>
 </body>
