@@ -86,6 +86,7 @@
             <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
             <li><a href="#interests" onclick="showSection('interests')">Interests</a></li>
             <li><a href="#team-repositories" onclick="showSection('team-repositories')">Team Repositories</a></li>
+            <li><a href="#term-project" onclick="showSection('term-project')">Term Project</a></li>
         </ul>
     </nav>
 
@@ -187,47 +188,39 @@
             <p><strong>Nature Enthusiast:</strong> I find immense joy in nature-related activities, particularly the tranquility offered by beach views.</p>
         </section>
 
-        <!-- Team Repositories Section -->
-        <section id="team-repositories" class="content-section" style="display: none;">
-            <h2>Team Project Repositories 
-                <button class="heading-button" onclick="toggleContent('more-team-repositories')">Visit GitHub</button>
-            </h2>
-            <p>
-                <a href="https://rohitajala.github.io/GVSU-CIS641-NinjaTurtles/" target="_blank">
-                    Project Webpage Link: GVSU CIS641 NinjaTurtles
-                </a>
-            </p>
-            <div id="more-team-repositories" class="more-content" style="display: none;">
-                <p>This repository contains the collaborative work my team and I are contributing toward our semester-long project for CIS641. The project revolves around building efficient cloud-based systems for real-world scenarios.</p>
-            </div>
+        
+        <!-- Term Project Section -->
+        <section id="term-project" class="content-section" style="display: none;">
+            <h2>Term Project</h2>
+            <h3>4-Wheeler Inventory System</h3>
+            <p>The project aims to develop a comprehensive inventory system for 4-wheeler vehicles produced between 2000 and 2024. This system will track and manage vehicle data, providing detailed information about different car models, including their specifications, pricing, and performance over the years.</p>
+            <p>The platform will serve as an informative guide for potential car buyers, allowing users to compare vehicles from both the U.S. and India. It will feature a user-friendly search functionality and analysis tools to help users make informed decisions.</p>
+            <ul>
+                <li>Data includes 4-wheeler vehicle details such as brand, model, year, and specifications.</li>
+                <li>Provides insights on pricing trends, performance, and key features over the years.</li>
+                <li>Targets international students or audiences unfamiliar with U.S. car brands, helping them compare options effectively.</li>
+            </ul>
+            <p>The inventory system is also expected to attract partnerships with car dealerships and manufacturers, potentially offering a platform for collaborations and promotions in the automobile industry.</p>
         </section>
 
+        <!-- Team Repositories Section -->
+        <section id="team-repositories" class="content-section" style="display: none;">
+            <h2>Team Repositories</h2>
+            <p><strong>CIS641 Project Webpagelink:</strong> <a href="https://github.com/rohitajala/GVSU-CIS641-NinjaTurtles" target="_blank">GitHub Link</a></p>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Rohita Jahnavi Jala - All Rights Reserved</p>
+        <p>© 2024 Rohita Jahnavi Jala. All rights reserved.</p>
     </footer>
 
     <script>
         function showSection(sectionId) {
-            // Hide all sections
-            const sections = document.querySelectorAll('.content-section');
-            sections.forEach(section => {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
                 section.style.display = 'none';
             });
-
-            // Show the selected section
-            const selectedSection = document.getElementById(sectionId);
-            selectedSection.style.display = 'block';
-        }
-
-        function toggleContent(contentId) {
-            const content = document.getElementById(contentId);
-            if (content.style.display === 'none') {
-                content.style.display = 'block';
-            } else {
-                content.style.display = 'none';
-            }
+            document.getElementById(sectionId).style.display = 'block';
         }
     </script>
 </body>
